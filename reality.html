@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+</head>
+<body>
+    <img src="reality.jfif" alt="Description de l'image" width="500">
+   💍 Extérieurement, la structure interne d’un objet ne doit pas être visible, et celui-ci doit garantir ses modifications.
+
+🎬 Dans le film « Reality », sorti le 16 août 2023 avec Sydney Sweeney, Reality Winner a 25 ans en 2017, et est interrogée par deux agents du FBI à son domicile. Cette conversation d’apparence banale parfois surréaliste, dont chaque dialogue est tiré de l’authentique transcription de l’interrogatoire, brosse le portrait complexe d’une milléniale américaine, vétérane de l’US Air Force, professeure de yoga, qui aime les animaux, les voyages et partager des photos sur les réseaux sociaux. Pourquoi le FBI s’intéresse-t-il à elle ? Qui est vraiment Reality ?
+
+🌎 Dans le monde du développement logiciel, un des principes de l’objet qui n’a pas été compris est l’encapsulation.
+
+👉 L’encapsulation est le regroupement de données avec un ensemble de routines qui en permettent la lecture et la manipulation. Ce principe est souvent accompagné du masquage de ces données brutes afin de s’assurer que l’utilisateur ne contourne pas l’interface qui lui est destinée. L’ensemble se considère alors comme une boîte noire ayant un comportement et des propriétés spécifiés (source : https://lnkd.in/er5uspBu)).
+
+❌ Les attributs « public » d’une classe peuvent être accèdés et modifiés directement depuis n’importe quel endroit.
+
+❌❌ Les gens ont donc mis ces champs en privé (private) et ajouté des accesseurs / mutateurs (aka getter / setter).
+Sauf que cela revient au même que des propriétés en public.
+Si pour des data structures cela est normal, pour des objets métier c’est complètement anormal.
+
+✅ S’il faut bien mettre ces champs en privé, il ne faut pas générer de setter automatiquement.
+
+✅✅ Si un champs n’est doit pas être modifié, rien ne doit être offert pour le faire. Exemple : un identifiant
+Le mieux est d’instancier l’objet avec son identifiant. Cela est donc à faire via un constructeur.
+
+✅✅✅ Le changement d’une valeur de propriété doit être fait via une méthode dédiée, avec un nommage adéquat (pas via un setter), et qui possède ses propres contrôles.
+
+✅✅✅✅ La structure interne de l’objet (dans le cas de grappe d’objets) n’est pas exposée à l’extérieur. Charge à la tête de l’objet d’aller effectuer les bonnes modifications dans sa structure interne.
+
+✍️ Avez-vous rencontré ces objets anémiques soit disant métier, sous couvert d’encapsulation ?
+  
+    <a href="index.html">Retour à l'accueil</a>
+</body>
+</html>
