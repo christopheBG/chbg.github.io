@@ -2350,6 +2350,12 @@ a {
   .u-form-vertical .u-form-group {
     width: 100%;
   }
+  .u-image.u-logo {
+    margin-right: 10px;
+  }
+  .u-image.u-logo img {
+    width: 60px; /* Réduction de la taille du logo */
+  }
 }
 @media (max-width: 575px) {
   .u-form-vertical .u-form-group.u-label-left {
