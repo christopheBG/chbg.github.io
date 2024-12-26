@@ -1188,9 +1188,14 @@ a {
 .u-image.u-logo {
   display: table;
   white-space: nowrap;
+  vertical-align: middle;
+  margin-right: 15px; /* Espace entre le logo et le texte */
 }
 .u-image.u-logo img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 80px; /* Taille du logo */
 }
 .u-form-horizontal {
   display: flex;
