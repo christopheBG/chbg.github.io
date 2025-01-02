@@ -488,14 +488,14 @@
 }
 
 .u-section-4 .u-shape-1 {
-  width: calc(((100% - 1300px) / 2) + 820px);
+  width: calc(((100% - 1140px) / 2) + 820px);
   height: 496px;
   background-image: none;
   margin: -11px 0 0 auto;
 }
 
 .u-section-4 .u-layout-wrap-1 {
-  width: 1300px;
+  width: 1140px;
   margin: -425px auto 60px;
 }
 
